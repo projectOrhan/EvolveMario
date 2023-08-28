@@ -6,7 +6,15 @@ NeatEvolve algoritması baz alınarak tasarlanmıştır. NeatEvolve, algoritmas�
 #Algoritma Detayları
 
 İlk kez çalıştırıldığında, 1.jenerasyon bireyleri oluşturulur. Bu adımda, tamamen rastgele genlere sahip bireyler ilk jenerasyonu oluşturacaktır.
-Bu algoritmada geçerli ilerleme boyunca en iyi genlere sahip birey her jenerasyonda korunur. Örneğin, 1.Jenerasyondaki 2.Birey  
+Ardından bu ilk jenerasyonun bireyleri oyunda gösterecekleri ilerlemeye bağlı olarak bir Fitness(Başarım) değeri alacaklar. Bu değer onların oyunda ilerleme anlamında ne kadar başarılı olduklarını gösterecek diyebiliriz.
+
+Bu algoritma jenerasyonlar boyunca en iyi genlere sahip bireyi her zaman korur, ta ki daha iyi bir başarıma sahip bir birey elde edilene kadar. Örneğin, 1.Jenerasyondaki 12.Birey en iyi Fitness(Başarım) değerine sahip ise bu birey gelecek jenerasyon olan 2.Jenerasyonun üretim aşamasında, hiç değişmeden, 2.jenerasyonun 1.bireyi olacak şekilde aktarılır. Ardından boşta kalan bireylerin üretilmesi işlemi yapılır. Bu üretim yapılırken geçerli jenerasyon üzerinde bireylerin Fitness(Başarım) değerleriyle orantılı olacak şekilde bir Rulet Seçim uygulanır. Ardından Rulet Seçim sonucu seçilen 2 Birey Uniform Çaprazlama işlemi ile bir Evlat Birey üretirler. Bu evlat bireye ardından Mutasyon uygulanır. Ardından bu evlat birey 2.birey olarak gelecek jenerasyona aktarılmış olur. Kalan 3.4.5... gibi bireyler de yine aynı yöntemle üretilir ve jenerasyon tamamen doldurulmuş olur.
+
+Üretim aşamasından sonra,
+Bu bireyler yine başlangıç jenerasyonunda olduğu gibi oyundaki gösterecekleri ilerlemeye bağlı olarak bir Fitness(Başarım) değeri alacaklardır. Ve aynı üretim aşamalarından geçerek yeni nesilleri oluşturacaklardır. Algoritma bu şekilde sürekli daha yüksek Fitness(Başarım) değerlerine sahip bireyleri arayacak şekilde devam etmiş olacaktır.
+
+
+
 
 
 
