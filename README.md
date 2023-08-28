@@ -3,6 +3,9 @@ Genetik Algoritma methodları kullanılarak Lua Dilinde yazılmış bir scriptti
 
 NeatEvolve algoritması baz alınarak tasarlanmıştır. NeatEvolve, algoritmasından farkı Yapay Sinir Ağı kullanmıyor olmasıdır. Kısacası, bu Algoritma sadece Genetik Algoritma methodları kullanarak tasarlanmıştır. Bu çalışmadaki amaç Yapay Sinir Ağları olmadan tasarlanan bir Evrim Algoritmasının istenen sonuçlara ulaşmadaki öğrenme hızı, öğrenme limitleri gibi detayları gözlemlemek ve deneyimlemektir. Ek olarak, Genetik Algoritmalardaki Yerel Optimumda sıkışma-takılma, üretilecek yeni nesillerde yeterli gen çeşitliliğini sağlamak, iyi genlerin korunumunu sağlamak gibi sık sık gözlemlenen optimizasyon problemlerinin çözümleri de deneyimlenmiş oldu.
 
+#Nasıl Çalışır?
+DP1.state dosyası kayıt dosyasıdır. BizHawk Emulatöründe Super Mario oyununun istenilen bir bölümündeki alınan kayıt dosyasıdır. Bu algoritmada, her bir birey için DP1.state dosyası yeniden yüklenerek her bir birey aynı kayıt noktasından başlar. Böylece her bir birey aynı bölüm üzerinde test edilmiş olur.
+
 #Algoritma Detayları
 
 İlk kez çalıştırıldığında, 1.jenerasyon bireyleri oluşturulur. Bu adımda, tamamen rastgele genlere sahip bireyler ilk jenerasyonu oluşturacaktır.
