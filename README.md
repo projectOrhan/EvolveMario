@@ -13,6 +13,9 @@ Bu algoritma jenerasyonlar boyunca en iyi genlere sahip bireyi her zaman korur, 
 Üretim aşamasından sonra,
 Bu bireyler yine başlangıç jenerasyonunda olduğu gibi oyundaki gösterecekleri ilerlemeye bağlı olarak bir Fitness(Başarım) değeri alacaklardır. Ve aynı üretim aşamalarından geçerek yeni nesilleri oluşturacaklardır. Algoritma bu şekilde sürekli daha yüksek Fitness(Başarım) değerlerine sahip bireyleri arayacak şekilde devam etmiş olacaktır.
 
+#Kullanılan Genetik Algoritmaya Dair Detaylar
+--elitism uniform caprazlama ve mutasyon.
+
 
 
 
