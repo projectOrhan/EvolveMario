@@ -1,17 +1,19 @@
 # EvolveMario
 Lua Dilinde Genetik Algoritma methodları kullanılarak yazılmış bir scripttir. Super Mario oyununda karakterin kendi kendine bölümleri geçmesini amaçlar. 
 
-NeatEvolve algoritması baz alınarak tasarlanmıştır. NeatEvolve, algoritmasından farkı Yapay Sinir Ağı kullanmıyor olmasıdır. Kısacası, bu Algoritma sadece Genetik Algoritma methodları kullanarak tasarlanmıştır. Bu çalışmadaki amaç Yapay Sinir Ağları olmadan tasarlanan bir Evrim Algoritmasının istenen sonuçlara ulaşmadaki öğrenme hızı, öğrenme limitleri gibi detayları gözlemlemek ve deneyimlemektir. Ek olarak, Genetik Algoritmalardaki Yerel Optimumda sıkışma-takılma, üretilecek yeni nesillerde yeterli gen çeşitliliğini sağlamak, iyi genlerin korunumunu sağlamak gibi sık sık gözlemlenen optimizasyon problemlerinin çözümleri de deneyimlenmiş oldu.
+NeatEvolve algoritmasını baz alarak tasarlanmıştır. NeatEvolve, algoritmasından farkı Yapay Sinir Ağı kullanmıyor olmasıdır. Kısacası, bu Algoritma sadece Genetik Algoritma methodları kullanarak tasarlanmıştır. Bu çalışmadaki amaç Yapay Sinir Ağları olmadan tasarlanan bir Evrim Algoritmasının istenen sonuçlara ulaşmadaki öğrenme hızı, öğrenme limitleri gibi detayları gözlemlemek ve deneyimlemektir. Ek olarak, Genetik Algoritmalardaki Yerel Optimumda sıkışma-takılma, üretilecek yeni nesillerde yeterli gen çeşitliliğini sağlamak, iyi genlerin korunumunu sağlamak gibi sık sık gözlemlenen optimizasyon problemlerinin çözümleri de deneyimlenmiş oldu.
 
-#Nasıl Çalışır?
-Öncelikle Super Mario oyunu BizHawk Emülatöründe açılır. Ardından Lua Console üzerinden EvolveMario script dosyası aktive edilir. Ardından algoritma çalışmaya başlar.
+# Nasıl Çalışır?
+Öncelikle Super Mario oyunu BizHawk Emülatöründe açılır. 
+Daha sonra, Lua Console üzerinden EvolveMario script dosyası aktive edilir. 
+Ardından, algoritma çalışmaya başlar.
 
-#Diğer Dosyalarla İlgili Detaylar
+# Dosyalarla İlgili Detaylar
 DP1.state dosyası kayıt dosyasıdır. BizHawk Emulatöründe Super Mario oyununun istenilen bir bölümündeki alınan kayıt dosyasıdır. Bu algoritmada, her bir birey için DP1.state dosyası yeniden yüklenerek her bir birey aynı kayıt noktasından başlar. Böylece her bir birey aynı bölüm üzerinde test edilmiş olur.
 
 
 
-#Algoritma Detayları
+# Algoritma Detayları
 
 İlk kez çalıştırıldığında, 1.jenerasyon bireyleri oluşturulur. Bu adımda, tamamen rastgele genlere sahip bireyler ilk jenerasyonu oluşturacaktır.
 Ardından bu ilk jenerasyonun bireyleri oyunda gösterecekleri ilerlemeye bağlı olarak bir Fitness(Başarım) değeri alacaklar. Bu değer onların oyunda ilerleme anlamında ne kadar başarılı olduklarını gösterecek diyebiliriz.
@@ -21,7 +23,7 @@ Bu algoritma jenerasyonlar boyunca en iyi genlere sahip bireyi korur, ta ki daha
 Üretim aşamasından sonra,
 Bu bireyler yine başlangıç jenerasyonunda olduğu gibi oyundaki gösterecekleri ilerlemeye bağlı olarak bir Fitness(Başarım) değeri alacaklardır. Ve aynı üretim aşamalarından geçerek yeni nesilleri oluşturacaklardır. Algoritma bu şekilde sürekli daha yüksek Fitness(Başarım) değerlerine sahip bireyleri arayacak şekilde devam etmiş olacaktır.
 
-#Kullanılan Genetik Algoritmaya Dair Detaylar
+# Kullanılan Genetik Algoritmaya Dair Detaylar
 --elitism uniform caprazlama ve mutasyon.
 Bu algoritmada Elitist yaklaşım kullanılmıştır. Buradaki amaç en iyi başarım gösteren bireyi nesiller boyunca ondan daha iyi başarım gösteren birey elde edilene kadar koruyarak, yeni nesillerde en iyi bireyin genlerinin  olabildiğince korunmasını sağlamak amaçlanmıştır. Bunun sebebi ise mevcut başarım seviyesi olabildiğince korunarak ilerlemektir. Bu yaklaşımın avantaj ve dezavantajları olduğu için bu algoritmada bu hususlar gözetilmiştir ve bu yöntem seçilmiştir.
 
