@@ -11,11 +11,9 @@ Ardından, algoritma çalışmaya başlar.
 # Dosyalarla İlgili Detaylar
 DP1.state dosyası kayıt dosyasıdır. BizHawk Emulatöründe Super Mario oyununun istenilen bir bölümündeki alınan kayıt dosyasıdır. Bu algoritmada, her bir birey için DP1.state dosyası yeniden yüklenerek her bir birey aynı kayıt noktasından başlar. Böylece her bir birey aynı bölüm üzerinde test edilmiş olur.
 
-
-
 # Algoritma Detayları
 
-İlk kez çalıştırıldığında, 1.jenerasyon bireyleri oluşturulur. Bu adımda, tamamen rastgele genlere sahip bireyler ilk jenerasyonu oluşturacaktır.
+İlk kez çalıştırıldığında, 1.jenerasyon bireyleri oluşturulur. Bu adımda, tamamen rastgele genlere sahip bireyler ilk-başlangıç jenerasyonunu oluşturacaktır.
 Ardından bu ilk jenerasyonun bireyleri oyunda gösterecekleri ilerlemeye bağlı olarak bir Fitness(Başarım) değeri alacaklar. Bu değer onların oyunda ilerleme anlamında ne kadar başarılı olduklarını gösterecek diyebiliriz.
 
 Bu algoritma jenerasyonlar boyunca en iyi genlere sahip bireyi korur, ta ki daha iyi bir başarıma sahip yeni bir birey elde edilene kadar. Örneğin, 1.Jenerasyondaki 12.Birey en iyi Fitness(Başarım) değerine sahip ise bu birey gelecek jenerasyon olan 2.Jenerasyonun üretim aşamasında, hiç değişmeden, 2.jenerasyonun 1.bireyi olacak şekilde aktarılır. Ardından boşta kalan bireylerin üretilmesi işlemi yapılır. Bu üretim yapılırken geçerli jenerasyon üzerinde bireylerin Fitness(Başarım) değerleriyle orantılı olacak şekilde bir Rulet Seçim uygulanır. Ardından Rulet Seçim sonucu seçilen iki birey Uniform Çaprazlama işlemi ile bir Evlat Birey üretirler. Bu evlat bireye ardından Mutasyon uygulanır. Ardından bu evlat birey 2.birey olarak gelecek jenerasyona aktarılmış olur. Kalan 3.4.5... gibi bireyler de yine aynı yöntemle üretilir ve jenerasyon tamamen doldurulmuş olur.
