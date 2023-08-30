@@ -4,7 +4,7 @@ Lua Dilinde Genetik Algoritma methodları kullanılarak yazılmış bir scriptti
 **NeatEvolve** algoritmasını baz alarak tasarlanmıştır. **NeatEvolve**, algoritmasından farkı **Yapay Sinir Ağı** kullanmıyor olmasıdır. Kısacası, bu Algoritma sadece **Genetik Algoritma** methodları kullanarak tasarlanmıştır. Bu çalışmadaki amaç **Yapay Sinir Ağları olmadan** tasarlanan bir **Evrim Algoritmasının** istenen sonuçlara ulaşmadaki öğrenme hızı, öğrenme limitleri gibi detayları gözlemlemek ve deneyimlemektir. Ek olarak, **Genetik Algoritmalardaki Yerel Optimumda sıkışma-takılma**, üretilecek yeni nesillerde yeterli **gen çeşitliliğini** sağlamak, **iyi genlerin korunumunu** sağlamak gibi sık sık gözlemlenen **optimizasyon problemlerinin** çözümleri de deneyimlenmiş oldu.
 
 ## Dosyalarla İlgili Detaylar
-**DP1.State** dosyası kayıt dosyasıdır. **BizHawk Emulatöründe** **Super Mario** oyununun istenilen bir bölümünde alınan kayıt dosyasıdır. Bu algoritmada, her bir birey için **DP1.State** dosyası yeniden yüklenerek her bir birey aynı kayıt noktasından başlar. Böylece her bir birey aynı bölüm üzerinde test edilmiş olur.
+**DP1.State** dosyası kayıt dosyasıdır. **BizHawk Emulatöründe** **Super Mario** oyununun istenilen bir bölümünden alınan kayıt dosyasıdır. Bu algoritmada, her bir birey için **DP1.State** dosyası yeniden yüklenerek her bir birey aynı kayıt noktasından başlar. Böylece her bir birey aynı bölüm üzerinde test edilmiş olur.
 
 **EvolveMario.lua** dosyası Lua script dosyasıdır. Yazılan bu script BizHawk Emülatöründeki **Lua Console** üzerinden aktive edilerek algoritma çalıştırılabilir.
 
