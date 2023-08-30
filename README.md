@@ -3,11 +3,6 @@ Lua Dilinde Genetik Algoritma methodları kullanılarak yazılmış bir scriptti
 
 **NeatEvolve** algoritmasını baz alarak tasarlanmıştır. **NeatEvolve**, algoritmasından farkı **Yapay Sinir Ağı** kullanmıyor olmasıdır. Kısacası, bu Algoritma sadece **Genetik Algoritma** methodları kullanarak tasarlanmıştır. Bu çalışmadaki amaç **Yapay Sinir Ağları olmadan** tasarlanan bir **Evrim Algoritmasının** istenen sonuçlara ulaşmadaki öğrenme hızı, öğrenme limitleri gibi detayları gözlemlemek ve deneyimlemektir. Ek olarak, **Genetik Algoritmalardaki Yerel Optimumda sıkışma-takılma**, üretilecek yeni nesillerde yeterli **gen çeşitliliğini** sağlamak, **iyi genlerin korunumunu** sağlamak gibi sık sık gözlemlenen **optimizasyon problemlerinin** çözümleri de deneyimlenmiş oldu.
 
-## Nasıl Çalışır?
-Öncelikle **Super Mario** oyunu **BizHawk Emülatöründe** açılır. 
-Daha sonra, **Lua Console** üzerinden **EvolveMario.lua** script dosyası aktive edilir. 
-Ardından, algoritma çalışmaya başlar.
-
 ## Dosyalarla İlgili Detaylar
 **DP1.State** dosyası kayıt dosyasıdır. **BizHawk Emulatöründe** **Super Mario** oyununun istenilen bir bölümünde alınan kayıt dosyasıdır. Bu algoritmada, her bir birey için **DP1.State** dosyası yeniden yüklenerek her bir birey aynı kayıt noktasından başlar. Böylece her bir birey aynı bölüm üzerinde test edilmiş olur.
 
@@ -16,6 +11,11 @@ Ardından, algoritma çalışmaya başlar.
 **savedPool.txt** gerektiğinde **Lua Console** üzerinden yazılacak **savePool()** komutu ile çalışma anındaki mevcut jenerasyonun tüm bireylerini bir text dosyasına kaydeder. Böylece bir sonraki çalışmada **loadPool()** komutu ile kaydedilmiş olan jenerasyon algoritmaya yüklenmiş olur. Böylece kalındığı ilerlemeden devam edilmiş olacaktır.
 
 **savedTopFitness.txt** gerektiğinde **Lua Console** üzerinden yazılacak **saveTop()** komutu ile çalışma anındaki jenerasyonlar boyunca tüm bireylerin arasında en yüksek fitness değerine sahip olan bireyi dosyaya kaydeder. Böylece en yüksek fitness değerine sahip bireyin gen dizilimine dair detaylar dosyaya kaydedilmiş olacaktır. İstenildiğinde **playTop** komutu ile jenerasyonlar boyunca en yüksek fitness değerine sahip bireyi tekrar oynatacaktır.
+
+## Nasıl Çalışır?
+Öncelikle **Super Mario** oyunu **BizHawk Emülatöründe** açılır. 
+Daha sonra, **Lua Console** üzerinden **EvolveMario.lua** script dosyası aktive edilir. 
+Ardından, algoritma çalışmaya başlar.
 
 ## Algoritma Detayları
 
