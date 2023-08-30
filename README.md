@@ -9,7 +9,11 @@ Daha sonra, **Lua Console** üzerinden **EvolveMario.lua** script dosyası aktiv
 Ardından, algoritma çalışmaya başlar.
 
 ## Dosyalarla İlgili Detaylar
-**DP1.State** dosyası kayıt dosyasıdır. BizHawk Emulatöründe Super Mario oyununun istenilen bir bölümündeki alınan kayıt dosyasıdır. Bu algoritmada, her bir birey için **DP1.State** dosyası yeniden yüklenerek her bir birey aynı kayıt noktasından başlar. Böylece her bir birey aynı bölüm üzerinde test edilmiş olur.
+**DP1.State** dosyası kayıt dosyasıdır. **BizHawk Emulatöründe** **Super Mario** oyununun istenilen bir bölümündeki alınan kayıt dosyasıdır. Bu algoritmada, her bir birey için **DP1.State** dosyası yeniden yüklenerek her bir birey aynı kayıt noktasından başlar. Böylece her bir birey aynı bölüm üzerinde test edilmiş olur.
+
+**EvolveMario.lua** dosyası Lua script dosyasıdır. Yazılan bu script BizHawk Emülatöründeki **Lua Console** üzerinden aktive edilerek algoritma çalıştırılabilir.
+
+**savedPool.txt** gerektiğinde **Lua Console** üzerinden yazılacak **savePool()** komutu ile çalışma anındaki mevcut jenerasyonun tüm bireylerini bir text dosyasına kaydeder. Böylece bir sonraki çalışmada **loadPool()** komutu ile kaydedilmiş olan jenerasyon algoritmaya yüklenmiş olur. Böylece kalındığı ilerlemeden devam edilmiş olacaktır.
 
 ## Algoritma Detayları
 
