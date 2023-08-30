@@ -8,7 +8,7 @@ Lua Dilinde Genetik Algoritma methodları kullanılarak yazılmış bir scriptti
 
 **EvolveMario.lua** dosyası Lua script dosyasıdır. Yazılan bu script BizHawk Emülatöründeki **Lua Console** üzerinden aktive edilerek algoritma çalıştırılabilir.
 
-**savedPool.txt** gerektiğinde **Lua Console** üzerinden yazılacak **savePool()** komutu ile çalışma anındaki mevcut jenerasyonun tüm bireylerini bir text dosyasına kaydeder. Böylece bir sonraki çalışmada **loadPool()** komutu ile kaydedilmiş olan jenerasyon algoritmaya yüklenmiş olur. Böylece kalındığı ilerlemeden devam edilmiş olacaktır.
+**savedPool.txt** dosyası bir jenerasyonun tüm bireylerini içeren kayıt dosyasıdır. Gerektiğinde **Lua Console** üzerinden yazılacak **savePool()** komutu ile çalışma anındaki mevcut jenerasyonun tüm bireylerini **savedPool.txt** text dosyasına kaydeder. Böylece bir sonraki çalışmada **loadPool()** komutu ile kaydedilmiş olan jenerasyon algoritmaya yüklenmiş olur. Böylece kaydedilmiş jenerasyondan-ilerlemeden devam edilmiş olacaktır.
 
 **savedTopFitness.txt** gerektiğinde **Lua Console** üzerinden yazılacak **saveTop()** komutu ile çalışma anındaki jenerasyonlar boyunca tüm bireylerin arasında en yüksek fitness değerine sahip olan bireyi dosyaya kaydeder. Böylece en yüksek fitness değerine sahip bireyin gen dizilimine dair detaylar dosyaya kaydedilmiş olacaktır. İstenildiğinde **playTop** komutu ile jenerasyonlar boyunca en yüksek fitness değerine sahip bireyi tekrar oynatacaktır.
 
