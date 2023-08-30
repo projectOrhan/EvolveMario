@@ -1,7 +1,11 @@
 # EvolveMario
 Lua Dilinde Genetik Algoritma methodları kullanılarak yazılmış bir scripttir. Super Mario oyununda karakterin kendi kendine bölümleri geçmesini amaçlar. 
 
-**NeatEvolve** algoritmasını baz alarak tasarlanmıştır. **NeatEvolve**, algoritmasından farkı **Yapay Sinir Ağı** kullanmıyor olmasıdır. Kısacası, bu Algoritma sadece **Genetik Algoritma** methodları kullanarak tasarlanmıştır. Bu çalışmadaki amaç **Yapay Sinir Ağları olmadan** tasarlanan bir **Evrim Algoritmasının** istenen sonuçlara ulaşmadaki öğrenme hızı, öğrenme limitleri gibi detayları gözlemlemek ve deneyimlemektir. Ek olarak, **Genetik Algoritmalardaki Yerel Optimumda sıkışma-takılma**, üretilecek yeni nesillerde yeterli **gen çeşitliliğini** sağlamak, **iyi genlerin korunumunu** sağlamak gibi sık sık gözlemlenen **optimizasyon problemlerinin** çözümleri de deneyimlenmiş oldu.
+## Algoritma Hakkında
+
+**NeatEvolve** algoritmasını örnek alarak tasarlanmıştır.  **NeatEvolve**, algoritmasından farkı **Yapay Sinir Ağı** kullanmıyor olmasıdır. Kısacası, bu Algoritma sadece **Genetik Algoritma** methodları kullanarak tasarlanmıştır. Bu çalışmadaki amaç **Yapay Sinir Ağları olmadan** tasarlanan bir **Evrim Algoritmasının** istenen sonuçlara ulaşmadaki öğrenme hızı, öğrenme limitleri gibi detayları gözlemlemek ve deneyimlemektir. Ek olarak, **Genetik Algoritmalardaki Yerel Optimumda sıkışma-takılma**, üretilecek yeni nesillerde yeterli **gen çeşitliliğini** sağlamak, **iyi genlerin korunumunu** sağlamak gibi sık sık gözlemlenen **optimizasyon problemlerinin** çözümleri de deneyimlenmiş oldu.
+
+***NOT: Algoritmanın çalışması için gereken ve oyundaki bazı bilgilerin hesaplandığı fonksiyonlar, örneğin karakterin oyundaki konumu gibi, kısaca oyundaki RAM değerleri üzerinden yapılan hesaplamaların olduğu fonksiyonlar, birebir **NeatEvolve** algoritmasından aktarılmıştır. Dolayısıyla, bu algoritmanın ana işleyişi benim tarafımdan kodlanmıştır. Ancak, algoritmanın çalışabilmesi için gereken yardımcı fonksiyonlar NeatEvolve algoritmasından aktarılmıştır.***
 
 ## Dosyalarla İlgili Detaylar
 **DP1.State** dosyası kayıt dosyasıdır. **BizHawk Emulatöründe** **Super Mario** oyununun istenilen bir bölümünden alınan kayıt dosyasıdır. Bu algoritmada, her bir birey için **DP1.State** dosyası yeniden yüklenerek her bir birey aynı kayıt noktasından başlar. Böylece her bir birey aynı bölüm üzerinde test edilmiş olur.
