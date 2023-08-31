@@ -8,7 +8,7 @@ Lua Dilinde Genetik Algoritma methodları kullanılarak yazılmış bir scriptti
 ***NOT: Algoritmanın çalışabilmesi için gereken ve oyundaki RAM değerleri üzerinden yapılan hesaplamaların olduğu fonksiyonlar, örneğin karakterin oyundaki konumu gibi, birebir **NeatEvolve** algoritmasından aktarılmıştır. Dolayısıyla, bu EvolveMario algoritmasının ana işleyişi benim tarafımdan tasarlanmış ve kodlanmıştır. Ancak, algoritmanın çalışabilmesi için gereken yardımcı fonksiyonlar NeatEvolve algoritmasından birebir aktarılmıştır.***
 
 ## Dosyalarla İlgili Detaylar
-**DP1.State** dosyası kayıt dosyasıdır. **BizHawk Emulatöründe** **Super Mario** oyununun istenilen bir bölümünden alınan kayıt dosyasıdır. Bu algoritmada, her bir birey için **DP1.State** dosyası yeniden yüklenerek her bir birey aynı kayıt noktasından başlar. Böylece her bir birey aynı bölüm üzerinde eşit durumlarda test edilmiş olur.
+**DP1.State** dosyası kayıt dosyasıdır. **BizHawk Emulatöründe** **Super Mario** oyununun istenilen bir bölümünden alınan kayıt dosyasıdır. Bu algoritmada, her bir birey için **DP1.State** dosyası yeniden yüklenerek her bir birey aynı kayıt noktasından başlar. Böylece her birey aynı bölüm üzerinde eşit durumlarda test edilmiş olur.
 
 **EvolveMario.lua** dosyası Lua script dosyasıdır. Yazılan bu script BizHawk Emülatöründeki **Lua Console** üzerinden aktive edilerek algoritma çalıştırılabilir.
 
