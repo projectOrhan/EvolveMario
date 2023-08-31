@@ -8,13 +8,13 @@ Lua Dilinde Genetik Algoritma methodları kullanılarak yazılmış bir scriptti
 ***NOT: Algoritmanın çalışabilmesi için gereken ve oyundaki RAM değerleri üzerinden yapılan hesaplamaların olduğu fonksiyonlar, örneğin karakterin oyundaki konumu gibi, birebir **NeatEvolve** algoritmasından aktarılmıştır. Dolayısıyla, bu algoritmanın ana işleyişi benim tarafımdan tasarlanmış ve kodlanmıştır. Ancak, algoritmanın çalışabilmesi için gereken yardımcı fonksiyonlar NeatEvolve algoritmasından birebir aktarılmıştır.***
 
 ## Dosyalarla İlgili Detaylar
-**DP1.State** dosyası kayıt dosyasıdır. **BizHawk Emulatöründe** **Super Mario** oyununun istenilen bir bölümünden alınan kayıt dosyasıdır. Bu algoritmada, her bir birey için **DP1.State** dosyası yeniden yüklenerek her bir birey aynı kayıt noktasından başlar. Böylece her bir birey aynı bölüm üzerinde test edilmiş olur.
+**DP1.State** dosyası kayıt dosyasıdır. **BizHawk Emulatöründe** **Super Mario** oyununun istenilen bir bölümünden alınan kayıt dosyasıdır. Bu algoritmada, her bir birey için **DP1.State** dosyası yeniden yüklenerek her bir birey aynı kayıt noktasından başlar. Böylece her bir birey aynı bölüm üzerinde eşit durumlarda test edilmiş olur.
 
 **EvolveMario.lua** dosyası Lua script dosyasıdır. Yazılan bu script BizHawk Emülatöründeki **Lua Console** üzerinden aktive edilerek algoritma çalıştırılabilir.
 
 **savedPool.txt** dosyası bir jenerasyonun tüm bireylerini içeren kayıt dosyasıdır. Gerektiğinde **Lua Console** üzerinden yazılacak **savePool()** komutu ile çalışma anındaki mevcut jenerasyonun tüm bireylerini **savedPool.txt** text dosyasına kaydeder. Böylece bir sonraki çalışmada **loadPool()** komutu ile kaydedilmiş olan jenerasyon algoritmaya yüklenmiş olur. Böylece kaydedilmiş jenerasyondan-ilerlemeden devam edilmiş olacaktır.
 
-**savedTopFitness.txt** gerektiğinde **Lua Console** üzerinden yazılacak **saveTop()** komutu ile çalışma anındaki jenerasyonlar boyunca tüm bireylerin arasında en yüksek fitness değerine sahip olan bireyi dosyaya kaydeder. Böylece en yüksek fitness değerine sahip bireyin gen dizilimine dair detaylar dosyaya kaydedilmiş olacaktır. İstenildiğinde **playTop** komutu ile jenerasyonlar boyunca en yüksek fitness değerine sahip bireyi tekrar oynatacaktır.
+**savedTopFitness.txt** gerektiğinde **Lua Console** üzerinden yazılacak **saveTop()** komutu ile çalışma anındaki jenerasyonlar boyunca tüm bireylerin arasında **en yüksek fitness değerine sahip** olan bireyi dosyaya kaydeder. Böylece en yüksek fitness değerine sahip bireyin gen dizilimine dair detaylar dosyaya kaydedilmiş olacaktır. İstenildiğinde **playTop** komutu ile jenerasyonlar boyunca en yüksek fitness değerine sahip bireyi tekrar oynatacaktır.
 
 ## Nasıl Çalışır?
 Öncelikle **Super Mario** oyunu **BizHawk Emülatöründe** açılır. 
