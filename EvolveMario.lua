@@ -27,7 +27,7 @@ InputSize = (BoxRadius*2+1)*(BoxRadius*2+1)
 rightmost = 0
 basbireysayi = 1 --luada diziler 1.indisten başlıyor. C deki gibi 0 değil.
 generasyoncount=1 -- jenerasyon sayımı.
-popBuyukluk = 3 
+popBuyukluk = 30 
 TimeoutConstant = 20
 Inputs = InputSize+1
 Outputs = #ButtonNames
@@ -37,12 +37,12 @@ timeout = 20
 bas_pop = {} -- baslangicta içi boş olan popülasyon dizisi tanımlanır. global olarak kullanacaktır. bu bireylerin normal dizisi.
 bas_pop_buton = {} -- bu da bireylerin butona basma zamanlarını tutan baslangic popülasyonu olacak.
 
-gen_uzunluk = 10 --istenilen gen uzunluğu miktarı ayarlanır.
+gen_uzunluk = 100 --istenilen gen uzunluğu miktarı ayarlanır.
 ortalamafitnessyaz = 0
 eniyiolan = {}
 eniyiolan_buton ={}
 eniyiolan_fitness = 0
-mutation_rate = 4 --1 ile 100 arasında verilecek bir değer ile mutasyon fonksiyonlarındaki kaç oranlı olarak mutasyon olacağı değiştirilir. konsol üzerinde de değiştirebilmek için burada setlenmiştir. 
+mutation_rate = 5 --1 ile 100 arasında verilecek bir değer ile mutasyon fonksiyonlarındaki kaç oranlı olarak mutasyon olacağı değiştirilir. konsol üzerinde de değiştirebilmek için burada setlenmiştir. 
 
 
 index_btn = 1
